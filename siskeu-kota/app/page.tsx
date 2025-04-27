@@ -563,8 +563,8 @@ export default function Page() {
             <div className="animate-from-left">
               <h1 className="text-3xl md:text-5xl font-bold mb-4 leading-tight">Sistem Keuangan Kota Online</h1>
               <p className="text-gray-600 mb-6 text-lg">
-                Siskeu-kota Online merupakan fitur sistem keuangan kota yang dapat mengoptimalkan pengelolaan keuangan
-                dan pelaporan di tingkat kota dengan teknologi digital terkini.
+                Sistem Keuangan Kota Online merupakan fitur sistem keuangan kota yang dapat mengoptimalkan pengelolaan
+                keuangan dan pelaporan di tingkat kota dengan teknologi digital terkini.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Button
@@ -615,13 +615,13 @@ export default function Page() {
                       <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
                       <div className="w-3 h-3 rounded-full bg-green-500"></div>
                     </div>
-                    <div className="text-sm font-medium">Dashboard SISKEU-KOTA</div>
+                    <div className="text-sm font-medium">Dashboard DIGITALKOTA</div>
                   </div>
 
                   <div className="bg-white rounded-b-lg overflow-hidden">
                     <Image
                       src="/placeholder.svg?height=400&width=600&text=Dashboard+Keuangan+Kota"
-                      alt="Siskeu-kota Dashboard"
+                      alt="Dashboard Keuangan Kota"
                       width={600}
                       height={400}
                       className="w-full h-auto"
@@ -676,7 +676,7 @@ export default function Page() {
             <div className="inline-block bg-teal-50 text-[#008080] px-4 py-1 rounded-full text-sm font-medium mb-4">
               Fitur Unggulan
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Fitur Siskeu-kota Online</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Fitur DIGITALKOTA Online</h2>
             <p className="text-gray-600 max-w-2xl mx-auto mb-12">
               Sistem Keuangan Kota Online menyediakan berbagai fitur canggih untuk membantu pengelolaan keuangan dan
               administrasi kota secara efisien dan transparan.
@@ -754,7 +754,7 @@ export default function Page() {
                       Terintegrasi dengan sistem administrasi dan pelayanan kota
                     </h3>
                     <p className="text-gray-600 mb-6">
-                      Selain visualisasi data, fitur siskeu-kota juga terintegrasi dengan sistem administrasi dan
+                      Selain visualisasi data, fitur DIGITALKOTA juga terintegrasi dengan sistem administrasi dan
                       pelayanan kota. Hal ini akan meningkatkan efisiensi, transparansi, dan aksesibilitas dalam
                       penyelenggaraan pemerintah serta pelayanan kepada masyarakat.
                     </p>
@@ -806,7 +806,7 @@ export default function Page() {
                   <div className="order-1 md:order-2 text-left transform transition-all duration-500 hover:translate-x-2">
                     <h3 className="text-2xl font-bold mb-4">Otomasi laporan pada website profil</h3>
                     <p className="text-gray-600 mb-6">
-                      Melalui Siskeu-kota laporan dana kota dapat dibuat secara otomatis sehingga dapat meningkatkan
+                      Melalui DIGITALKOTA laporan dana kota dapat dibuat secara otomatis sehingga dapat meningkatkan
                       efisiensi waktu serta menghindari kesalahan manusia serta memudahkan konsistensi pelaporan dan
                       hasil laporan.
                     </p>
