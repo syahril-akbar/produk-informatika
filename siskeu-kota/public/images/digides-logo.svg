@@ -1,6 +1,0 @@
-<svg width="120" height="40" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M10 8H25C28.866 8 32 11.134 32 15V25C32 28.866 28.866 32 25 32H10C6.134 32 3 28.866 3 25V15C3 11.134 6.134 8 10 8Z" fill="#008080"/>
-  <path d="M40 15H100C103.866 15 107 18.134 107 22V22C107 25.866 103.866 29 100 29H40V15Z" fill="#008080"/>
-  <text x="45" y="25" font-family="Arial" font-size="12" fill="white">DIGIDES</text>
-  <text x="10" y="25" font-family="Arial" font-size="16" fill="white">D</text>
-</svg>
