@@ -1,0 +1,206 @@
+@import "./browser-compatibility.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    /* Fastel theme primary color - Soft teal */
+    --primary: 174 60% 50%;
+    --primary-foreground: 210 40% 98%;
+
+    /* Fastel theme secondary color - Soft coral */
+    --secondary: 355 100% 85%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    /* Fastel theme accent color - Soft yellow */
+    --accent: 45 100% 85%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 174 60% 50%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    /* Fastel theme primary color - Soft teal (darker for dark mode) */
+    --primary: 174 60% 40%;
+    --primary-foreground: 210 40% 98%;
+
+    /* Fastel theme secondary color - Soft coral (darker for dark mode) */
+    --secondary: 355 100% 75%;
+    --secondary-foreground: 210 40% 98%;
+
+    /* Fastel theme accent color - Soft yellow (darker for dark mode) */
+    --accent: 45 100% 75%;
+    --accent-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 174 60% 40%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    font-family: var(--font-inter);
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-poppins);
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Animation for statistics */
+@keyframes countUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-count-up {
+  animation: countUp 1s ease-out forwards;
+}
+
+/* Hover animations */
+.hover-scale {
+  transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+/* Microinteractions */
+.micro-interaction {
+  transition: all 0.3s ease;
+}
+
+.micro-interaction:hover {
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}
+
+/* Responsive image handling */
+.responsive-image-container {
+  position: relative;
+  width: 100%;
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+.responsive-image-container img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.responsive-image-container:hover img {
+  transform: scale(1.02);
+}
+
+/* Image loading animation */
+@keyframes imageReveal {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.image-reveal {
+  animation: imageReveal 0.8s ease-out forwards;
+}
+
+/* Media queries for responsive images */
+@media (max-width: 768px) {
+  .responsive-image-container {
+    max-width: 100%;
+  }
+}
+
+/* Logo styles */
+.logo-text {
+  background: linear-gradient(to right, hsl(var(--primary)), hsl(var(--secondary)));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+/* Responsive header adjustments */
+@media (max-width: 640px) {
+  .header-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* Smooth mobile menu transition */
+@keyframes menuSlideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.mobile-menu {
+  animation: menuSlideDown 0.2s ease-out forwards;
+}
